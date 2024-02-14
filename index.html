@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Propuesta de San Valentín</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #673ab7; /* Morado oscuro más claro */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #e91e63; /* Color rosa */
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #e91e63; /* Color rosa */
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            outline: none;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #c2185b; /* Color rosa oscuro */
+        }
+
+        @keyframes heartBeat {
+            0% {
+                transform: scale(1);
+            }
+            10% {
+                transform: scale(1.1);
+            }
+            20% {
+                transform: scale(1);
+            }
+            30% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .heart {
+            color: #e91e63; /* Color rosa */
+            animation: heartBeat 1s infinite;
+            margin: 20px;
+            font-size: 36px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .flower {
+            font-size: 50px;
+            animation: float 3s ease-in-out infinite;
+            margin: 20px;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .bear {
+            font-size: 100px;
+            animation: rotate 5s linear infinite;
+            margin: 20px;
+        }
+
+        .flowers-left {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .flowers-right {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="flowers-left">
+        <div class="flower">&#127799;</div>
+        <div class="flower">&#127799;</div>
+        <div class="flower">&#127799;</div>
+    </div>
+    <div class="flowers-right">
+        <div class="flower">&#127799;</div>
+        <div class="flower">&#127799;</div>
+        <div class="flower">&#127799;</div>
+    </div>
+    <h1>¡Feliz San Valentín, Linda mi Amor!</h1>
+    <div class="heart">&hearts;</div>
+    <button onclick="preguntar()">Haz clic aquí para descubrir</button>
+    <div class="flower">&#127799;</div>
+    <div class="flower">&#127799;</div>
+    <div class="flower">&#127799;</div>
+    <script>
+        function preguntar() {
+            let respuesta = confirm("¿Quieres ser mi 14 de febrero y mis 365 días del año por muchos años?");
+            if (respuesta) {
+                alert("!Yupii Yupii¡ ¡Se que ya habías aceptado cuando te di la carta presencial pero igual quería hacer este detalle porque te lo mereces mi vida jejeje <3!, Además yo sí quiero ser tu 14 de febrero y 365 días por muchos años my love");
+            } else {
+                alert("Como que ño mi Amorcito:(.");
+            }
+        }
+    </script>
+</body>
+</html>
